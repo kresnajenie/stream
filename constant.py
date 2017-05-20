@@ -1,3 +1,5 @@
+MQ_SERVER = "localhost"
+QUEUE_SOCCER = "soccer/picture"
 SOCCER_SCORE = "score"
 SOCCER = "soccer"
 SOCCER_SUBS = "substitution"
@@ -6,3 +8,6 @@ SOCCER_AWAY = "away"
 SOCCER_KELUAR = "keluar"
 SOCCER_MASUK = "masuk"
 SOCCER_TIME="time"
+KEY_INPUTFILENAME='input_filename'
+KEY_OUTPUTFILENAME='output_filename'
+KEY_BASE64PICTURE = 'base64_picture'
