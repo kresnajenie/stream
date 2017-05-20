@@ -1,0 +1,8 @@
+SOCCER_SCORE = "score"
+SOCCER = "soccer"
+SOCCER_SUBS = "substitution"
+SOCCER_HOME = "home"
+SOCCER_AWAY = "away"
+SOCCER_KELUAR = "keluar"
+SOCCER_MASUK = "masuk"
+SOCCER_TIME="time"
