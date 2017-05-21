@@ -17,12 +17,19 @@ def text_to_screen(screen,text,x,y,size, warna):
 # soccer-score.py --help 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-m","--menit", nargs='?', const=0, type=int,help="start awal menit untuk waktu berjalan")
-parser.add_argument("-d","--detik",help="start awal detik untuk waktu berjalan")
-parser.add_argument("-h","--home",help="nama tim home max 3 karakter, contoh [BHK], [CC]")
+parser.add_argument("-m","--menit", type=int,help="start awal menit untuk waktu berjalan")
+parser.add_argument("-d","--detik", type=int,help="start awal detik untuk waktu berjalan")
+parser.add_argument("-o","--home",help="nama tim home max 3 karakter, contoh [BHK], [CC]")
 parser.add_argument("-a","--away",help="nama tim away max 3 karakter, contoh [BHK], [CC]")
 
 args = parser.parse_args()
+
+if args.detik==None:
+	args.detik=0
+
+if args.menit==None:
+	args.menit=0
+
 
 detik=int(args.detik)
 menit=int(args.menit)
