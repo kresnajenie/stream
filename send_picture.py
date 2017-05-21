@@ -16,7 +16,7 @@ encoded_data = base64.b64encode(i)
 pesan={}
 
 pesan[c.KEY_INPUTFILENAME] = "leister.jpg"
-pesan[c.KEY_OUTPUTFILENAME] = "leister_2.jpg"
+pesan[c.KEY_OUTPUTFILENAME] = "gambar.jpg"
 pesan[c.KEY_BASE64PICTURE] = encoded_data
 
 

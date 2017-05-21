@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-import paho.mqtt.client as mqtt
 import porcc as por
-MQTT_SERVER = "localhost"
-MQTT_TOPIC="#" # "cc/porcc"
+MQ_SERVER = "localhost"
+MQ_QUEUE="#" # "cc/porcc"
 
 
 # The callback for when the client receives a CONNACK response from the server.
@@ -21,7 +20,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect(MQTT_SERVER, 1883, 60)
-client.subscribe(MQTT_TOPIC)
+client.connect(MQ_SERVER, 1883, 60)
+client.subscribMQ_QUEUEIC)
 
 client.loop_forever()
